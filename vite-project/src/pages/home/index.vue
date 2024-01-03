@@ -1,11 +1,13 @@
 <template>
-  <div class="about">center</div>
+  home page
+  <demo></demo>
 </template>
 <script setup lang="ts">
-import { ProTableInstance } from "../home/type.ts";
+import demo from "./demo.vue";
+
 // console.log("ProTableInstance", ProTableInstance);
 defineOptions({
-  name: "center",
+  name: "home",
 });
 </script>
 

@@ -4,8 +4,13 @@ export const staticRouter: RouteRecordRaw[] = [
     path: "/",
     name: "layout",
     component: () => import("../layouts/index.vue"),
-    // redirect: "/",
+    // redirect: "/home",
     children: [
+      {
+        path: "/",
+        name: "home",
+        component: () => import("../pages/home/index.vue"),
+      },
       {
         path: "/about",
         name: "about",
